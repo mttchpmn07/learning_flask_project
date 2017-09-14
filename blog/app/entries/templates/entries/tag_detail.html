@@ -1,0 +1,5 @@
+{% extends "entries/base_entries.html" %}
+
+
+{% block title %}{% if tag %}{{ tag }} entries{% else %}{{ tags|join(", ") }}{% endif %}{% endblock %}
+{% block content_title %}{% if tag %}{{ tag }} entries{% else %}{{ tags|join(", ") }}{% endif %}{% endblock %}
